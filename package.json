@@ -1,5 +1,5 @@
 {
-  "name": "web-utils",
+  "name": "@bri.chan/web-utils",
   "version": "1.0.0",
   "description": "前端公共方法库",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/BrilliantChan/web-utils.git"
   },
-  "author": "",
+  "author": "BrilliantChan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BrilliantChan/web-utils/issues"
