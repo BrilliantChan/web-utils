@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro';
 import {Base64} from 'js-base64';
 import qs from 'qs';
-import Storage from './../Storage'
+import Storage from './../storage'
 
 /**
  * @param   {Object}    config 配置内容
