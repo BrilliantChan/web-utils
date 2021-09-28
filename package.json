@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/BrilliantChan/web-utils/issues"
   },
-  "homepage": "https://github.com/BrilliantChan/web-utils#readme"
+  "homepage": "https://github.com/BrilliantChan/web-utils#readme",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0"
+  }
 }
