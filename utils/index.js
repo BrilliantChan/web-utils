@@ -7,11 +7,13 @@ const sleep = (ms = 500) => new Promise((resolve) => setTimeout(resolve, ms));
  * @returns {array}
  */
 const matchIndex = (reg, str) => {
-    const newReg = new RegExp(reg, 'g');
+    const newReg = new RegExp(reg, 'gi');
+    const result = new RegExp.exec(str);
     const array = [];
 
-    while ((result = newReg.exec(str)) !== null) {
-        const fIndex = newReg.firstIndex;
+    newReg.lastIndex = 0;
+
+    while (result !== null) {
         const lIndex = newReg.lastIndex - result[0].length;
 
         array.push(lIndex);
