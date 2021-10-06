@@ -7,17 +7,7 @@ const sleep = (ms = 500) => new Promise((resolve) => setTimeout(resolve, ms));
  * @returns {array}
  */
 const matchIndex = (reg, str) => {
-    const newReg = new RegExp(reg, 'gi');
-    const result = newReg.exec(str);
-    const array = [];
-
-    newReg.lastIndex = 0;
-
-    while (result !== null) {
-        const lIndex = newReg.lastIndex - result[0].length;
-
-        array.push(lIndex);
-    }
+    const array = str.match(reg);
 
     return array;
 }
