@@ -7,7 +7,7 @@ const sleep = (ms = 500) => new Promise((resolve) => setTimeout(resolve, ms));
  * @returns {array}
  */
 const matchIndex = (reg, str) => {
-    const array = str.match(reg);
+    const array = reg.exec(str);
 
     return array;
 }
