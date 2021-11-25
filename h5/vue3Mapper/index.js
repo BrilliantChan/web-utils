@@ -42,7 +42,7 @@ function useActionMapper(mapper, mapFn) {
 
 const useState = function (name, mapper) {
     const mapperFn = name.length > 0 
-        ? mapperFn = createNamespacedHelpers(name).mapState
+        ? createNamespacedHelpers(name).mapState
         : mapState;
 
     return useStateMapper(mapper, mapperFn);
@@ -50,7 +50,7 @@ const useState = function (name, mapper) {
 
 const useGetters = function (name, mapper) {
     const mapperFn = name.length > 0 
-        ? mapperFn = createNamespacedHelpers(name).mapGetters
+        ? createNamespacedHelpers(name).mapGetters
         : mapGetters;
 
     return useStateMapper(mapper, mapperFn);
@@ -58,7 +58,7 @@ const useGetters = function (name, mapper) {
 
 const useActions = function (name, mapper) {
     const mapperFn = name.length > 0 
-        ? mapperFn = createNamespacedHelpers(name).mapActions
+        ? createNamespacedHelpers(name).mapActions
         : mapActions;
 
     return useStateMapper(mapper, mapperFn);
@@ -66,7 +66,7 @@ const useActions = function (name, mapper) {
 
 const useMutations = function (name, mapper) {
     const mapperFn = name.length > 0 
-        ? mapperFn = createNamespacedHelpers(name).mapMutations
+        ? createNamespacedHelpers(name).mapMutations
         : mapMutations;
 
     return useStateMapper(mapper, mapperFn);
