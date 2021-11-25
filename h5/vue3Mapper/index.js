@@ -61,7 +61,7 @@ const useActions = function (name, mapper) {
         ? createNamespacedHelpers(name).mapActions
         : mapActions;
 
-    return useStateMapper(mapper, mapperFn);
+    return useActionMapper(mapper, mapperFn);
 };
 
 const useMutations = function (name, mapper) {
@@ -69,7 +69,7 @@ const useMutations = function (name, mapper) {
         ? createNamespacedHelpers(name).mapMutations
         : mapMutations;
 
-    return useStateMapper(mapper, mapperFn);
+    return useActionMapper(mapper, mapperFn);
 };
 
 export {
