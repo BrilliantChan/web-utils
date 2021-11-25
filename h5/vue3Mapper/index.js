@@ -40,33 +40,41 @@ function useActionMapper(mapper, mapFn) {
     return storeAction
 };
 
+const mapState = function (name, mapper) {
+    const mapperFn = name.length > 0 
+        ? mapperFn = createNamespacedHelpers(name).mapState
+        : mapState;
+
+    return useStateMapper(mapper, mapperFn);
+};
+
+const mapGetters = function (name, mapper) {
+    const mapperFn = name.length > 0 
+        ? mapperFn = createNamespacedHelpers(name).mapGetters
+        : mapGetters;
+
+    return useStateMapper(mapper, mapperFn);
+};
+
+const mapActions = function (name, mapper) {
+    const mapperFn = name.length > 0 
+        ? mapperFn = createNamespacedHelpers(name).mapActions
+        : mapActions;
+
+    return useStateMapper(mapper, mapperFn);
+};
+
+const mapMutations = function (name, mapper) {
+    const mapperFn = name.length > 0 
+        ? mapperFn = createNamespacedHelpers(name).mapMutations
+        : mapMutations;
+
+    return useStateMapper(mapper, mapperFn);
+};
+
 export {
-    mapState: function (name, mapper) {
-        const mapperFn = name.length > 0 
-            ? mapperFn = createNamespacedHelpers(name).mapState
-            : mapState;
-
-        return useStateMapper(mapper, mapperFn);
-    },
-    mapGetters: function (name, mapper) {
-        const mapperFn = name.length > 0 
-            ? mapperFn = createNamespacedHelpers(name).mapGetters
-            : mapGetters;
-
-        return useStateMapper(mapper, mapperFn);
-    },
-    mapActions: function (name, mapper) {
-        const mapperFn = name.length > 0 
-            ? mapperFn = createNamespacedHelpers(name).mapActions
-            : mapActions;
-
-        return useStateMapper(mapper, mapperFn);
-    },
-    mapMutations: function (name, mapper) {
-        const mapperFn = name.length > 0 
-            ? mapperFn = createNamespacedHelpers(name).mapMutations
-            : mapMutations;
-
-        return useStateMapper(mapper, mapperFn);
-    }
+    mapState,
+    mapGetters,
+    mapActions,
+    mapMutations
 };
