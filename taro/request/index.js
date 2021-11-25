@@ -96,7 +96,7 @@ Request.prototype.get = function (
  * @param   {String}    options.method 请求方式
  * @param   {Object}    options.data 请求参数
  * @param   {Boolean}   options.withToken 是否带token
- * @param   {Number}   options.cacheTime 是否带token
+ * @param   {Number}    options.cacheTime 是否带token
  * @param   {Object}    options.header 请求头信息
  * */
 Request.prototype.request = function ({
