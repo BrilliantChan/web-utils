@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1638252498116') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spinner:before {
+  content: "\e609";
+}
+
+.icon-shop:before {
+  content: "\e60a";
+}
+
+.icon-goods:before {
+  content: "\e60b";
+}
+
+.icon-member-fill:before {
+  content: "\e60c";
+}
+
+.icon-goods_fill:before {
+  content: "\e60d";
+}
+
+.icon-shop-fill:before {
+  content: "\e60e";
+}
+
+.icon-order:before {
+  content: "\e60f";
+}
+
+.icon-order-fill:before {
+  content: "\e610";
+}
+
+.icon-shop-set:before {
+  content: "\e611";
+}
+
+.icon-gift-fill:before {
+  content: "\e612";
+}
+
+.icon-gift:before {
+  content: "\e613";
+}
+
+.icon-money-bag-fill:before {
+  content: "\e614";
+}
+
+.icon-data-fill:before {
+  content: "\e615";
+}
+
+.icon-mp-fill:before {
+  content: "\e616";
+}
+
+.icon-app-fill:before {
+  content: "\e617";
+}
+
+.icon-set-fill:before {
+  content: "\e618";
+}
+
+.icon-set:before {
+  content: "\e619";
+}
+
+.icon-angle-double-right:before {
+  content: "\e61a";
+}
+
+.icon-angle-double-left:before {
+  content: "\e61b";
+}
+
+.icon-angle-double-down:before {
+  content: "\e61c";
+}
+
+.icon-angle-double-up:before {
+  content: "\e61d";
+}
+
