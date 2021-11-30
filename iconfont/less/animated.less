@@ -1,11 +1,9 @@
 // Animated Icons
 // --------------------------
-
-@prefix: fi;
-
-.@{prefix}-spin {
+.fi-spin {
+    display: inline-block;
     -webkit-animation: fi-spin 2s infinite linear;
-            animation: fi-spin 2s infinite linear;
+    animation: fi-spin 2s infinite linear;
 }
 
 @-webkit-keyframes fi-spin {
@@ -13,7 +11,7 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -21,13 +19,13 @@
 }
 
 @keyframes fi-spin {
-  0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  
-  100% {
-      -webkit-transform: rotate(359deg);
-      transform: rotate(359deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
 }
