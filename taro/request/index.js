@@ -58,7 +58,7 @@ Request.prototype.post = function (
         withToken,
         cacheTime,
         header: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'content-type': 'application/x-www-form-urlencoded',
             ...header
         }
     })
