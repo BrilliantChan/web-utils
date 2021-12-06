@@ -155,7 +155,10 @@ Request.prototype.request = function ({
                 url: `${baseURL}${url}`,
                 method,
                 data,
-                header,
+                header: {
+                    'content-type': 'application/x-www-form-urlencoded',
+                    ...header
+                },
                 success(result) {
                     const {data} = result;
 
